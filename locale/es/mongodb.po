@@ -1,0 +1,2469 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2012-09-12 20:08-0530\n"
+"PO-Revision-Date: 2012-09-12 23:16-0430\n"
+"Last-Translator: Sebasti�n Ram�rez <sebasmagri@gmail.com>\n"
+"Language-Team: Spanish <sebasmagri@gmail.com>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. type: Plain text
+#: en/mongodb.markdown:2
+msgid "# About This Book #"
+msgstr "# Sobre este libro #"
+
+#. type: Plain text
+#: en/mongodb.markdown:5
+msgid ""
+"## License ## The Little MongoDB Book book is licensed under the "
+"Attribution-NonCommercial 3.0 Unported license. **You should not have paid "
+"for this book.**"
+msgstr "\n## Licencia ## El Pequeño Libro de MongoDB se distribuye con una licencia [Reconocimiento-NoComercial 3.0 Unported (CC BY-NC 3.0)](<http://creativecommons.org/licenses/by-nc/3.0/deed.es_ES>). **Usted no debería haber pagado por este libro.**"
+
+#. type: Plain text
+#: en/mongodb.markdown:7
+msgid ""
+"You are basically free to copy, distribute, modify or display the "
+"book. However, I ask that you always attribute the book to me, Karl Seguin "
+"and do not use it for commercial purposes."
+msgstr "\nBásicamente, usted es libre de copiar, distribuir, modificar o mostrar el libro. Sin embargo, el autor Karl Seguin pide que se reconozcan sus atribuciones como tal y no sea usado con fines comerciales"
+
+#. type: Plain text
+#: en/mongodb.markdown:9
+msgid "You can see the full text of the license at:"
+msgstr "Puede ver una copia completa de la licencia en:"
+
+#. type: Plain text
+#: en/mongodb.markdown:11
+msgid "<http://creativecommons.org/licenses/by-nc/3.0/legalcode>"
+msgstr "<http://creativecommons.org/licenses/by-nc/3.0/legalcode>"
+
+#. type: Plain text
+#: en/mongodb.markdown:14
+msgid ""
+"## About The Author ## Karl Seguin is a developer with experience across "
+"various fields and technologies. He's an expert .NET and Ruby developer.  "
+"He's a semi-active contributor to OSS projects, a technical writer and an "
+"occasional speaker. With respect to MongoDB, he was a core contributor to "
+"the C# MongoDB library NoRM, wrote the interactive tutorial "
+"[mongly](http://mongly.com) as well as the [Mongo Web "
+"Admin](https://github.com/karlseguin/Mongo-Web-Admin). His free service for "
+"casual game developers, [mogade.com](http://mogade.com/), is powered by "
+"MongoDB."
+msgstr "## Sobre el autor ## Karl Seguin es un desarrollador con experiencia en varios campos y tecnologías. Él es experto en .NET y Ruby. Es parcialmente activo como colaborador en proyectos de código abierto, un escritor técnico y ponente ocasional. Con respecto a MongoDB, fue un parte del equipo de desarrollo de la librería de C# para MongoDB NoRM, escribió el tutorial interactivo [mongly](http://mongly.com) así como el [Mongo Web Admin](https://github.com/karlseguin/Mongo-Web-Admin). Su servicio gratuito para desarrolladores casuales de videojuegos, [mogade.com](http://mogade.com/), está hecho con MongoDB."
+
+#. type: Plain text
+#: en/mongodb.markdown:16
+msgid ""
+"Karl has since written [The Little Redis "
+"Book](http://openmymind.net/2012/1/23/The-Little-Redis-Book/)"
+msgstr "Karl escribió también [El Pequeño Libro de Redis](http://openmymind.net/2012/1/23/The-Little-Redis-Book/)"
+
+#. type: Plain text
+#: en/mongodb.markdown:18
+msgid ""
+"His blog can be found at <http://openmymind.net>, and he tweets via "
+"[@karlseguin](http://twitter.com/karlseguin)"
+msgstr "Su blog puede encontrarse en <http://openmymind.net>, y sus tweets vía [@karlseguin](http://twitter.com/karlseguin)"
+
+#. type: Plain text
+#: en/mongodb.markdown:21
+msgid ""
+"## With Thanks To ## A special thanks to [Perry "
+"Neal](http://twitter.com/perryneal) for lending me his eyes, mind and "
+"passion. You provided me with invaluable help. Thank you."
+msgstr "## Agradecimientos ## Un agradecimiento especial a [Perry Neal](http://twitter.com/perryneal) por prestarme sus ojos, mente y pasión. Tu me diste una ayuda invaluable. Gracias."
+
+#. type: Plain text
+#: en/mongodb.markdown:24
+msgid "## Latest Version ## The latest source of this book is available at:"
+msgstr "## Última Versión ## El código fuente más actual de este libro puede encontrarse en:"
+
+#. type: Plain text
+#: en/mongodb.markdown:26
+msgid "<http://github.com/karlseguin/the-little-mongodb-book>."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:29
+#, no-wrap
+msgid ""
+"# Introduction #\n"
+" > It's not my fault the chapters are short, MongoDB is just easy to "
+"learn.\n"
+msgstr ""
+"# Introducción #\n"
+" > No es mi culpa que los capítulos sean cortos, es solo que MongoDB es muy fácil de aprender."
+
+#. type: Plain text
+#: en/mongodb.markdown:31
+#, no-wrap
+msgid ""
+"It is often said that technology moves at a blazing pace. It's true that "
+"there is an ever growing list of new technologies and techniques being "
+"released. However, I've long been of the opinion that the fundamental "
+"technologies used by programmers move at a rather slow pace. One could spend "
+"years   learning little yet remain relevant. What is striking though is the "
+"speed at which established technologies get replaced. Seemingly over-night, "
+"long established technologies find themselves threatened by shifts in "
+"developer focus.\n"
+msgstr ""
+"A menudo se dice que la tecnología se mueve a un ritmo flameante. Es cierto que \n"
+"existe una lista de nuevas tecnologías y técnicas que no deja de crecer. Sin \n"
+"embargo, por largo tiempo he sido de la opinión de que las tecnologías fundamentales \n"
+"usadas por los programadores se mueven a un ritmo más bien lento. Uno podría pasar \n"
+"años aprendiendo poco y aún esto sería relevante. Lo que llama la atención sin \n"
+"embargo es la velocidad a la que las tecnologías establecidas son reemplazadas. \n"
+"Aparentemente durante la noche, tecnologías establecidas por mucho tiempo son \n"
+"se encuentran amenazadas por cambios en la atención de los desarrolladores."
+
+#. type: Plain text
+#: en/mongodb.markdown:33
+msgid ""
+"Nothing could be more representative of this sudden shift than the progress "
+"of NoSQL technologies against well-established relational databases. It "
+"almost seems like one day the web was being driven by a few RDBMS' and the "
+"next, five or so NoSQL solutions had established themselves as worthy "
+"solutions."
+msgstr ""
+"Nada podría ser más representativo de este cambio súbito que el progreso \n"
+"de las tecnologías NoSQL contra bases de datos relacionales bien establecidas. \n"
+"Casi pareciera como que un día la web era manejada por unos pocos motores de \n"
+"bases de datos relacionales, y al otro día, cinco o más soluciones NoSQL se \n"
+"hubiesen establecido con méritos."
+
+#. type: Plain text
+#: en/mongodb.markdown:35
+msgid ""
+"Even though these transitions seem to happen overnight, the reality is that "
+"they can take years to become accepted practice. The initial enthusiasm is "
+"driven by a relatively small set of developers and companies. Solutions are "
+"refined, lessons learned and seeing that a new technology is here to stay, "
+"others slowly try it for themselves. Again, this is particularly true in the "
+"case of NoSQL where many solutions aren't replacements for more traditional "
+"storage solutions, but rather address a specific need in addition to what "
+"one might get from traditional offerings."
+msgstr ""
+"Aún cuando esas transiciones parecen ocurrir mientras dormimos, la realidad es \n"
+"que pueden pasar años para que se conviertan en prácticas aceptadas. Un pequeño \n"
+"grupo de desarrolladores y compañías son las que ponen el entusiasmo inicial. \n"
+"Las soluciones son refinadas, se aprenden lecciones y, viendo que una tecnología \n"
+"ha llegado para quedarse, otros comienzan lentamente a probarla por su cuenta. \n"
+"De nuevo, esto es una verdad particularmente en el caso de NoSQL, donde muchas \n"
+"soluciones no son reemplazos para métodos de almacenamiento más típicos, sino \n"
+"que en cambio están dirigidas a cubrir una necesidad específica en adición a \n"
+"lo que uno esperaría de las tradicionales."
+
+#. type: Plain text
+#: en/mongodb.markdown:37
+msgid ""
+"Having said all of that, the first thing we ought to do is explain what is "
+"meant by NoSQL. It's a broad term that means different things to different "
+"people. Personally, I use it very broadly to mean a system that plays a part "
+"in the storage of data. Put another way, NoSQL (again, for me), is the "
+"belief that your persistence layer isn't necessarily the responsibility of a "
+"single system. Where relational database vendors have historically tried to "
+"position their software as a one-size-fits-all solution, NoSQL leans towards "
+"smaller units of responsibility where the best tool for a given job can be "
+"leveraged. So, your NoSQL stack might still leverage a relational database, "
+"say MySQL, but it'll also contain Redis as a persistence lookup for specific "
+"parts of the system as well as Hadoop for your intensive data "
+"processing. Put simply, NoSQL is about being open and aware of alternative, "
+"existing and additional patterns and tools for managing your data."
+msgstr ""
+"Habiendo dicho todo esto, lo primero que uno debe hacer es explicar que significa \n"
+"NoSQL. Éste es un término amplio que tiene un significado diferente para \n"
+"diferentes personas. Personalmente, lo uso extensamente para denotar un sistema \n"
+"que forma parte del almacenamiento de datos. Dicho de otra manera, NoSQL (de \n"
+"nuevo, para mi), es la creencia de que la capa de persistencia no es \n"
+"necesariamente responsabilidad de un único sistema. Donde los vendedores de bases \n"
+"de datos relacionales han tratado de posicionar sus sistemas como soluciones de \n"
+"talla única, NoSQL se inclina hacia unidades más pequeñas de responsabilidad \n"
+"donde se puede escojer la mejor herramienta para un trabajo dado. Así, su pila \n"
+"pila de soluciones NoSQL puede aún contener una base de datos relacional, \n"
+"por ejemplo MySQL, pero también tendrá a Redis como un sistema de persistencia \n"
+"para partes específicas del sistema así como Hadoop para procesamiento intensivo \n"
+"de datos. Dicho de manera sencilla, NoSQL se trata de ser abierto y consciente de \n"
+"los patrones y herramientas existentes, alternativas y complementarias para el \n"
+"manejo de sus datos."
+
+#. type: Plain text
+#: en/mongodb.markdown:39
+msgid ""
+"You might be wondering where MongoDB fits into all of this. As a "
+"document-oriented database, Mongo is a more generalized NoSQL solution. It "
+"should be viewed as an alternative to relational databases. Like relational "
+"databases, it too can benefit from being paired with some of the more "
+"specialized NoSQL solutions. MongoDB has advantages and drawbacks, which "
+"we'll cover in later parts of this book."
+msgstr ""
+"Podrá estar imaginando donde entra MongoDB en todo esto. Como una base de datos \n"
+"orientada a documentos, Mongo es una solución NoSQL más generalizada que puede \n"
+"verse como una alternativa a las bases de datos relacionales. Como éstas, también \n"
+"puede beneficiarse al combinarse con alguna de las soluciones NoSQL más \n"
+"especializadas. MongoDB tiene ventajas y desventajas, las cuales cubriremos en \n"
+"las próximas partes de este libro."
+
+#. type: Plain text
+#: en/mongodb.markdown:41
+msgid "As you may have noticed, we use the terms MongoDB and Mongo interchangeably."
+msgstr "Como habrá notado, utilizamos los términos MongoDB y Mongo indistintamente."
+
+#. type: Plain text
+#: en/mongodb.markdown:44
+msgid ""
+"# Getting Started # Most of this book will focus on core MongoDB "
+"functionality. We'll therefore rely on the MongoDB shell. While the shell is "
+"useful to learn as well as being a useful administrative tool, your code "
+"will use a MongoDB driver."
+msgstr ""
+"# Comenzando # La mayor parte de este libro se enfocará en las funcionalidades \n"
+"básicas de MongoDB. Por lo tanto, nos valdremos del intérprete interactivo, o \n"
+"shell, de MongoDB. Aún cuando el shell es útil para aprender asú como una útil \n"
+"herramienta administrativa, su código usará un controlador de MongoDB."
+
+#. type: Plain text
+#: en/mongodb.markdown:46
+msgid ""
+"This does bring up the first thing you should know about MongoDB: its "
+"drivers. MongoDB has a [number of official "
+"drivers](http://www.mongodb.org/display/DOCS/Drivers) for various "
+"languages. These drivers can be thought of as the various database drivers "
+"you are probably already familiar with. On top of these drivers, the "
+"development community has built more language/framework-specific "
+"libraries. For example, [NoRM](https://github.com/atheken/NoRM) is a C# "
+"library which implements LINQ, and "
+"[MongoMapper](https://github.com/jnunemaker/mongomapper) is a Ruby library "
+"which is ActiveRecord-friendly. Whether you choose to program directly "
+"against the core MongoDB drivers or some higher-level library is up to "
+"you. I point this out only because many people new to MongoDB are confused "
+"as to why there are both official drivers and community libraries - the "
+"former generally focuses on core communication/connectivity with MongoDB and "
+"the latter with more language and framework specific implementations."
+msgstr ""
+"Esto saca a flote lo primero que debería saber de MongoDB: sus controladores. \n"
+"MongoDB tiene un [número de controladores oficiales](http://www.mongodb.org/display/DOCS/Drivers) \n"
+"para varios lenguajes de programación. Esos controladores pueden verse como a \n"
+"cualquiera de los controladores de bases de datos a los que usted podría estar \n"
+"acostumbrado. Sobre la base de esos controladores, la comunidad de desarrolladores \n"
+" ha construido bibliotecas más específicas para cada lenguaje. Por ejemplo, \n"
+"[NoRM](https://github.com/atheken/NoRM) es una biblioteca para C# que implementa \n"
+"LINQ, y [MongoMapper](https://github.com/jnunemaker/mongomapper) es una para \n"
+"Ruby que es compatible con ActiveRecord. Programar usando los controladores de \n"
+"MongoDB o una de las bibliotecas de más alto nivel es su decisión. Denoto esto \n"
+"porque muchas personas que son nuevas en MongoDB se confunden por la existencia \n"
+"de controladores oficiales y de la comunidad. El primero generalmente se enfoca\n"
+"en la comunicación y conexión básica con MongoDB y el último en implementaciones \n"
+"más específicas para cada lenguaje o framework."
+
+#. type: Plain text
+#: en/mongodb.markdown:48
+msgid ""
+"As you read through this, I encourage you to play with MongoDB to replicate "
+"what I demonstrate as well as to explore questions that might come up on "
+"your own. It's easy to get up and running with MongoDB, so let's take a few "
+"minutes now to set things up."
+msgstr ""
+
+#. type: Bullet: '1. '
+#: en/mongodb.markdown:50
+msgid ""
+"Head over to the [official download page](http://www.mongodb.org/downloads) "
+"and grab the binaries from the first row (the recommended stable version) "
+"for your operating system of choice. For development purposes, you can pick "
+"either 32-bit or 64-bit."
+msgstr ""
+
+#. type: Bullet: '2. '
+#: en/mongodb.markdown:52
+msgid ""
+"Extract the archive (wherever you want) and navigate to the `bin` "
+"subfolder. Don't execute anything just yet, but know that `mongod` is the "
+"server process and `mongo` is the client shell - these are the two "
+"executables we'll be spending most of our time with."
+msgstr ""
+
+#. type: Bullet: '3. '
+#: en/mongodb.markdown:54
+msgid "Create a new text file in the `bin` subfolder named `mongodb.config`"
+msgstr ""
+
+#. type: Bullet: '4. '
+#: en/mongodb.markdown:56
+msgid ""
+"Add a single line to your mongodb.config: "
+"`dbpath=PATH_TO_WHERE_YOU_WANT_TO_STORE_YOUR_DATABASE_FILES`. For example, "
+"on Windows you might do `dbpath=c:\\mongodb\\data` and on Linux you might do "
+"`dbpath=/var/lib/mongodb/data`."
+msgstr ""
+
+#. type: Bullet: '5. '
+#: en/mongodb.markdown:58
+msgid "Make sure the `dbpath` you specified exists"
+msgstr ""
+
+#. type: Bullet: '6. '
+#: en/mongodb.markdown:60
+msgid "Launch mongod with the `--config /path/to/your/mongodb.config` parameter."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:62
+msgid ""
+"As an example for Windows users, if you extracted the downloaded file to "
+"`c:\\mongodb\\` and you created `c:\\mongodb\\data\\` then within "
+"`c:\\mongodb\\bin\\mongodb.config` you would specify "
+"`dbpath=c:\\mongodb\\data\\`. You could then launch `mongod` from a command "
+"prompt via `c:\\mongodb\\bin\\mongod --config "
+"c:\\mongodb\\bin\\mongodb.config`."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:64
+msgid ""
+"Feel free to add the `bin` folder to your path to make all of this less "
+"verbose. MacOSX and Linux users can follow almost identical directions. The "
+"only thing you should have to change are the paths."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:66
+msgid ""
+"Hopefully you now have MonogDB up and running. If you get an error, read the "
+"output carefully - the server is quite good at explaining what's wrong."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:68
+msgid ""
+"You can now launch `mongo` (without the *d*) which will connect a shell to "
+"your running server. Try entering `db.version()` to make sure everything's "
+"working as it should. Hopefully you'll see the version number you installed."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:71
+msgid ""
+"# Chapter 1 - The Basics # We begin our journey by getting to know the basic "
+"mechanics of working with MongoDB. Obviously this is core to understanding "
+"MongoDB, but it should also help us answer higher-level questions about "
+"where MongoDB fits."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:73
+msgid "To get started, there are six simple concepts we need to understand."
+msgstr ""
+
+#. type: Bullet: '1. '
+#: en/mongodb.markdown:75
+msgid ""
+"MongoDB has the same concept of a 'database' with which you are likely "
+"already familiar (or a schema for you Oracle folks).  Within a MongoDB "
+"instance you can have zero or more databases, each acting as high-level "
+"containers for everything else."
+msgstr ""
+
+#. type: Bullet: '2. '
+#: en/mongodb.markdown:77
+msgid ""
+"A database can have zero or more 'collections'. A collection shares enough "
+"in common with a traditional 'table' that you can safely think of the two as "
+"the same thing."
+msgstr ""
+
+#. type: Bullet: '3. '
+#: en/mongodb.markdown:79
+msgid ""
+"Collections are made up of zero or more 'documents'. Again, a document can "
+"safely be thought of as a 'row'."
+msgstr ""
+
+#. type: Bullet: '4. '
+#: en/mongodb.markdown:81
+msgid ""
+"A document is made up of one or more 'fields', which you can probably guess "
+"are a lot like 'columns'."
+msgstr ""
+
+#. type: Bullet: '5. '
+#: en/mongodb.markdown:83
+msgid "'Indexes' in MongoDB function much like their RDBMS counterparts."
+msgstr ""
+
+#. type: Bullet: '6. '
+#: en/mongodb.markdown:85
+msgid ""
+"'Cursors' are different than the other five concepts but they are important "
+"enough, and often overlooked, that I think they are worthy of their own "
+"discussion.  The important thing to understand about cursors is that when "
+"you ask MongoDB for data, it returns a cursor, which we can do things to, "
+"such as counting or skipping ahead, without actually pulling down data."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:87
+msgid ""
+"To recap, MongoDB is made up of `databases` which contain `collections`. A "
+"`collection` is made up of `documents`. Each `document` is made up of "
+"`fields`. `Collections` can be `indexed`, which improves lookup and sorting "
+"performance. Finally, when we get data from MongoDB we do so through a "
+"`cursor` whose actual execution is delayed until necessary."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:89
+msgid ""
+"You might be wondering, why use new terminology (collection vs. table, "
+"document vs. row and field vs. column). Is it just to make things more "
+"complicated? The truth is that while these concepts are similar to their "
+"relational database counterparts, they are not identical. The core "
+"difference comes from the fact that relational databases define `columns` at "
+"the `table` level whereas a document-oriented database defines its `fields` "
+"at the `document` level. That is to say that each `document` within a "
+"`collection` can have its own unique set of `fields`.  As such, a "
+"`collection` is a dumbed down container in comparison to a `table`, while a "
+"`document` has a lot more information than a `row`."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:91
+msgid ""
+"Although this is important to understand, don't worry if things aren't yet "
+"clear. It won't take more than a couple of inserts to see what this truly "
+"means. Ultimately, the point is that a collection isn't strict about what "
+"goes in it (it's schema-less). Fields are tracked with each individual "
+"document. The benefits and drawbacks of this will be explored in a future "
+"chapter."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:93
+msgid ""
+"Let's get hands-on. If you don't have it running already, go ahead and start "
+"the `mongod` server as well as a mongo shell. The shell runs "
+"JavaScript. There are some global commands you can execute, like `help` or "
+"`exit`. Commands that you execute against the current database are executed "
+"against the `db` object, such as `db.help()` or `db.stats()` . Commands that "
+"you execute against a specific collection, which is what we'll be doing a "
+"lot of, are executed against the `db.COLLECTION_NAME` object, such as "
+"`db.unicorns.help()` or `db.unicorns.count()`."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:95
+msgid ""
+"Go ahead and enter `db.help()`, you'll get a list of commands that you can "
+"execute against the `db` object."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:97
+msgid ""
+"A small side note. Because this is a JavaScript shell, if you execute a "
+"method and omit the parentheses `()`, you'll see the method body rather than "
+"executing the method. I only mention it because the first time you do it and "
+"get a response that starts with `function (...){` you won't be "
+"surprised. For example, if you enter `db.help` (without the parentheses), "
+"you'll see the internal implementation of the `help` method."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:99
+msgid ""
+"First we'll use the global `use` method to switch databases, go ahead and "
+"enter `use learn`. It doesn't matter that the database doesn't really exist "
+"yet. The first collection that we create will also create the actual `learn` "
+"database. Now that you are inside a database, you can start issuing database "
+"commands, like `db.getCollectionNames()`. If you do so, you should get an "
+"empty array (`[ ]`). Since collections are schema-less, we don't explicitly "
+"need to create them. We can simply insert a document into a new "
+"collection. To do so, use the `insert` command, supplying it with the "
+"document to insert:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:101
+#, no-wrap
+msgid "\tdb.unicorns.insert({name: 'Aurora', gender: 'f', weight: 450})\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:103
+msgid ""
+"The above line is executing `insert` against the `unicorns` collection, "
+"passing it a single argument. Internally MongoDB uses a binary serialized "
+"JSON format. Externally, this means that we use JSON a lot, as is the case "
+"with our parameters. If we execute `db.getCollectionNames()` now, we'll "
+"actually see two collections: `unicorns` and `system.indexes`. The "
+"collection `system.indexes` is created once per database and contains the "
+"information on our database's index."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:105
+msgid ""
+"You can now use the `find` command against `unicorns` to return a list of "
+"documents:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:107
+#, no-wrap
+msgid "\tdb.unicorns.find()\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:109
+msgid ""
+"Notice that, in addition to the data you specified, there's an `_id` "
+"field. Every document must have a unique `_id` field. You can either "
+"generate one yourself or let MongoDB generate an ObjectId for you. Most of "
+"the time you'll probably want to let MongoDB generate it for you. By "
+"default, the `_id` field is indexed - which explains why the "
+"`system.indexes` collection was created. You can look at `system.indexes`:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:111
+#, no-wrap
+msgid "\tdb.system.indexes.find()\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:113
+msgid ""
+"What you're seeing is the name of the index, the database and collection it "
+"was created against and the fields included in the index."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:115
+msgid ""
+"Now, back to our discussion about schema-less collections. Insert a totally "
+"different document into `unicorns`, such as:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:117
+#, no-wrap
+msgid ""
+"\tdb.unicorns.insert({name: 'Leto', gender: 'm', home: 'Arrakeen', worm: "
+"false})\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:119
+msgid ""
+"And, again use `find` to list the documents. Once we know a bit more, we'll "
+"discuss this interesting behavior of MongoDB, but hopefully you are starting "
+"to understand why the more traditional terminology wasn't a good fit."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:122
+msgid ""
+"## Mastering Selectors ## In addition to the six concepts we've explored, "
+"there's one practical aspect of MongoDB you need to have a good grasp of "
+"before moving to more advanced topics: query selectors. A MongoDB query "
+"selector is like the `where` clause of an SQL statement. As such, you use it "
+"when finding, counting, updating and removing documents from collections. A "
+"selector is a JSON object , the simplest of which is `{}` which matches all "
+"documents (`null` works too). If we wanted to find all female unicorns, we "
+"could use `{gender:'f'}`."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:124
+msgid ""
+"Before delving too deeply into selectors, let's set up some data to play "
+"with. First, remove what we've put so far in the `unicorns` collection via: "
+"`db.unicorns.remove()` (since we aren't supplying a selector, it'll remove "
+"all documents). Now, issue the following inserts to get some data we can "
+"play with (I suggest you copy and paste this):"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:137
+#, no-wrap
+msgid ""
+"\tdb.unicorns.insert({name: 'Horny', dob: new Date(1992,2,13,7,47), loves: "
+"['carrot','papaya'], weight: 600, gender: 'm', vampires: 63});\n"
+"\tdb.unicorns.insert({name: 'Aurora', dob: new Date(1991, 0, 24, 13, 0), "
+"loves: ['carrot', 'grape'], weight: 450, gender: 'f', vampires: 43});\n"
+"\tdb.unicorns.insert({name: 'Unicrom', dob: new Date(1973, 1, 9, 22, 10), "
+"loves: ['energon', 'redbull'], weight: 984, gender: 'm', vampires: 182});\n"
+"\tdb.unicorns.insert({name: 'Roooooodles', dob: new Date(1979, 7, 18, 18, "
+"44), loves: ['apple'], weight: 575, gender: 'm', vampires: 99});\n"
+"\tdb.unicorns.insert({name: 'Solnara', dob: new Date(1985, 6, 4, 2, 1), "
+"loves:['apple', 'carrot', 'chocolate'], weight:550, gender:'f', "
+"vampires:80});\n"
+"\tdb.unicorns.insert({name:'Ayna', dob: new Date(1998, 2, 7, 8, 30), loves: "
+"['strawberry', 'lemon'], weight: 733, gender: 'f', vampires: 40});\n"
+"\tdb.unicorns.insert({name:'Kenny', dob: new Date(1997, 6, 1, 10, 42), "
+"loves: ['grape', 'lemon'], weight: 690,  gender: 'm', vampires: 39});\n"
+"\tdb.unicorns.insert({name: 'Raleigh', dob: new Date(2005, 4, 3, 0, 57), "
+"loves: ['apple', 'sugar'], weight: 421, gender: 'm', vampires: 2});\n"
+"\tdb.unicorns.insert({name: 'Leia', dob: new Date(2001, 9, 8, 14, 53), "
+"loves: ['apple', 'watermelon'], weight: 601, gender: 'f', vampires: 33});\n"
+"\tdb.unicorns.insert({name: 'Pilot', dob: new Date(1997, 2, 1, 5, 3), loves: "
+"['apple', 'watermelon'], weight: 650, gender: 'm', vampires: 54});\n"
+"\tdb.unicorns.insert({name: 'Nimue', dob: new Date(1999, 11, 20, 16, 15), "
+"loves: ['grape', 'carrot'], weight: 540, gender: 'f'});\n"
+"\tdb.unicorns.insert({name: 'Dunx', dob: new Date(1976, 6, 18, 18, 18), "
+"loves: ['grape', 'watermelon'], weight: 704, gender: 'm', vampires: 165});\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:139
+msgid ""
+"Now that we have data, we can master selectors. `{field: value}` is used to "
+"find any documents where `field` is equal to `value`. `{field1: value1, "
+"field2: value2}` is how we do an `and` statement. The special `$lt`, `$lte`, "
+"`$gt`, `$gte` and `$ne` are used for less than, less than or equal, greater "
+"than, greater than or equal and not equal operations. For example, to get "
+"all male unicorns that weigh more than 700 pounds, we could do:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:143
+#, no-wrap
+msgid ""
+"\tdb.unicorns.find({gender: 'm', weight: {$gt: 700}})\n"
+"\t//or (not quite the same thing, but for demonstration purposes)\n"
+"\tdb.unicorns.find({gender: {$ne: 'f'}, weight: {$gte: 701}})\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:145
+msgid ""
+"The `$exists` operator is used for matching the presence or absence of a "
+"field, for example:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:147
+#, no-wrap
+msgid "\tdb.unicorns.find({vampires: {$exists: false}})\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:149
+msgid ""
+"Should return a single document. If we want to OR rather than AND we use the "
+"`$or` operator and assign it to an array of values we want or'd:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:151
+#, no-wrap
+msgid ""
+"\tdb.unicorns.find({gender: 'f', $or: [{loves: 'apple'}, {loves: 'orange'}, "
+"{weight: {$lt: 500}}]})\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:153
+msgid ""
+"The above will return all female unicorns which either love apples or "
+"oranges or weigh less than 500 pounds."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:155
+msgid ""
+"There's something pretty neat going on in our last example. You might have "
+"already noticed, but the `loves` field is an array. MongoDB supports arrays "
+"as first class objects. This is an incredibly handy feature. Once you start "
+"using it, you wonder how you ever lived without it. What's more interesting "
+"is how easy selecting based on an array value is: `{loves: 'watermelon'}` "
+"will return any document where `watermelon` is a value of `loves`."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:157
+msgid ""
+"There are more available operators than what we've seen so far. The most "
+"flexible being `$where` which lets us supply JavaScript to execute on the "
+"server. These are all described in the [Advanced "
+"Queries](http://www.mongodb.org/display/DOCS/Advanced+Queries#AdvancedQueries) "
+"section of the MongoDB website. What we've covered so far though is the "
+"basics you'll need to get started. It's also what you'll end up using most "
+"of the time."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:159
+msgid ""
+"We've seen how these selectors can be used with the `find` command. They can "
+"also be used with the `remove` command which we've briefly looked at, the "
+"`count` command, which we haven't looked at but you can probably figure out, "
+"and the `update` command which we'll spend more time with later on."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:161
+msgid ""
+"The `ObjectId` which MongoDB generated for our `_id` field can be selected "
+"like so:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:163
+#, no-wrap
+msgid "\tdb.unicorns.find({_id: ObjectId(\"TheObjectId\")})\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:166
+msgid ""
+"## In This Chapter ## We haven't looked at the `update` command yet, or some "
+"of the fancier things we can do with `find`. However, we did get MongoDB up "
+"and running, looked briefly at the `insert` and `remove` commands (there "
+"isn't much more than what we've seen). We also introduced `find` and saw "
+"what MongoDB `selectors` were all about. We've had a good start and laid a "
+"solid foundation for things to come. Believe it or not, you actually know "
+"most of what there is to know about MongoDB - it really is meant to be quick "
+"to learn and easy to use. I strongly urge you to play with your local copy "
+"before moving on. Insert different documents, possibly in new collections, "
+"and get familiar with different selectors. Use `find`, `count` and "
+"`remove`. After a few tries on your own, things that might have seemed "
+"awkward at first will hopefully fall into place."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:169
+msgid ""
+"# Chapter 2 - Updating # In chapter 1 we introduced three of the four CRUD "
+"(create, read, update and delete) operations. This chapter is dedicated to "
+"the one we skipped over: `update`. `Update` has a few surprising behaviors, "
+"which is why we dedicate a chapter to it."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:172
+msgid ""
+"## Update: Replace Versus $set ## In its simplest form, `update` takes 2 "
+"arguments: the selector (where) to use and what field to update with. If "
+"Roooooodles had gained a bit of weight, we could execute:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:174
+#, no-wrap
+msgid "\tdb.unicorns.update({name: 'Roooooodles'}, {weight: 590})\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:176
+msgid ""
+"(if you've played with your `unicorns` collection and it doesn't have the "
+"original data anymore, go ahead and `remove` all documents and re-insert "
+"from the code in chapter 1.)"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:178
+msgid ""
+"If this was real code, you'd probably update your records by `_id`, but "
+"since I don't know what `_id` MongoDB generated for you, we'll stick to "
+"`names`.  Now, if we look at the updated record:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:180 en/mongodb.markdown:188
+#, no-wrap
+msgid "\tdb.unicorns.find({name: 'Roooooodles'})\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:182
+msgid ""
+"You should discover `updates` first surprise. No document is found because "
+"the second parameter we supply is used to **replace** the original. In other "
+"words, the `update` found a document by `name` and replaced the entire "
+"document with the new document (the 2nd parameter). This is different than "
+"how SQL's `update` command works. In some situations, this is ideal and can "
+"be leveraged for some truly dynamic updates. However, when all you want to "
+"do is change the value of one, or a few fields, you are best to use "
+"MongoDB's `$set` modifier:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:184
+#, no-wrap
+msgid ""
+"\tdb.unicorns.update({weight: 590}, {$set: {name: 'Roooooodles', dob: new "
+"Date(1979, 7, 18, 18, 44), loves: ['apple'], gender: 'm', vampires: 99}})\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:186
+msgid ""
+"This'll reset the lost fields. It won't overwrite the new `weight` since we "
+"didn't specify it. Now if we execute:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:190
+msgid ""
+"We get the expected result. Therefore, the correct way to have updated the "
+"weight in the first place is:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:192
+#, no-wrap
+msgid "\tdb.unicorns.update({name: 'Roooooodles'}, {$set: {weight: 590}})\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:195
+msgid ""
+"## Update Modifiers ## In addition to `$set`, we can leverage other "
+"modifiers to do some nifty things. All of these update modifiers work on "
+"fields - so your entire document won't be wiped out. For example, the `$inc` "
+"modifier is used to increment a field by a certain positive or negative "
+"amount. For example, if Pilot was incorrectly awarded a couple vampire "
+"kills, we could correct the mistake by executing:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:197
+#, no-wrap
+msgid "\tdb.unicorns.update({name: 'Pilot'}, {$inc: {vampires: -2}})\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:199
+msgid ""
+"If Aurora suddenly developed a sweet tooth, we could add a value to her "
+"`loves` field via the `$push` modifier:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:201
+#, no-wrap
+msgid "\tdb.unicorns.update({name: 'Aurora'}, {$push: {loves: 'sugar'}})\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:203
+msgid ""
+"The [Updating](http://www.mongodb.org/display/DOCS/Updating) section of the "
+"MongoDB website has more information on the other available update "
+"modifiers."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:206
+msgid ""
+"## Upserts ## One of `updates` more pleasant surprises is that it fully "
+"supports `upserts`. An `upsert` updates the document if found or inserts it "
+"if not. Upserts are handy to have in certain situations and, when you run "
+"into one, you'll know it. To enable upserting we set a third parameter to "
+"`true`."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:208
+msgid ""
+"A mundane example is a hit counter for a website. If we wanted to keep an "
+"aggregate count in real time, we'd have to see if the record already existed "
+"for the page, and based on that decide to run an update or insert. With the "
+"third parameter omitted (or set to false), executing the following won't do "
+"anything:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:211
+#, no-wrap
+msgid ""
+"\tdb.hits.update({page: 'unicorns'}, {$inc: {hits: 1}});\n"
+"\tdb.hits.find();\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:213
+msgid "However, if we enable upserts, the results are quite different:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:216 en/mongodb.markdown:221
+#, no-wrap
+msgid ""
+"\tdb.hits.update({page: 'unicorns'}, {$inc: {hits: 1}}, true);\n"
+"\tdb.hits.find();\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:218
+msgid ""
+"Since no documents exists with a field `page` equal to `unicorns`, a new "
+"document is inserted. If we execute it a second time, the existing document "
+"is updated and `hits` is incremented to 2."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:224
+msgid ""
+"## Multiple Updates ## The final surprise `update` has to offer is that, by "
+"default, it'll update a single document. So far, for the examples we've "
+"looked at, this might seem logical. However, if you executed something like:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:227
+#, no-wrap
+msgid ""
+"\tdb.unicorns.update({}, {$set: {vaccinated: true }});\n"
+"\tdb.unicorns.find({vaccinated: true});\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:229
+msgid ""
+"You'd likely expect to find all of your precious unicorns to be "
+"vaccinated. To get the behavior you desire, a fourth parameter must be set "
+"to true:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:232
+#, no-wrap
+msgid ""
+"\tdb.unicorns.update({}, {$set: {vaccinated: true }}, false, true);\n"
+"\tdb.unicorns.find({vaccinated: true});\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:235
+msgid ""
+"## In This Chapter ## This chapter concluded our introduction to the basic "
+"CRUD operations available against a collection. We looked at `update` in "
+"detail and observed three interesting behaviors. First, unlike an SQL "
+"update, MongoDB's `update` replaces the actual document. Because of this the "
+"`$set` modifier is quite useful. Secondly, `update` supports an intuitive "
+"`upsert` which is particularly useful when paired with the `$inc` "
+"modifier. Finally, by default, `update` only updates the first found "
+"document."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:237
+msgid ""
+"Do remember that we are looking at MongoDB from the point of view of its "
+"shell. The driver and library you use could alter these default behaviors or "
+"expose a different API. For example, the Ruby driver merges the last two "
+"parameters into a single hash: `{:upsert => false, :multi => "
+"false}`. Similarly, the PHP driver, merges the last two parameters into an "
+"array: `array('upsert' => false, 'multiple' => false)`."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:240
+msgid ""
+"# Chapter 3 - Mastering Find # Chapter 1 provided a superficial look at the "
+"`find` command. There's more to `find` than understanding `selectors` "
+"though. We already mentioned that the result from `find` is a "
+"`cursor`. We'll now look at exactly what this means in more detail."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:243
+msgid ""
+"## Field Selection ## Before we jump into `cursors`, you should know that "
+"`find` takes a second optional parameter. This parameter is the list of "
+"fields we want to retrieve. For example, we can get all of the unicorns "
+"names by executing:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:245
+#, no-wrap
+msgid "\tdb.unicorns.find(null, {name: 1});\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:247
+msgid ""
+"By default, the `_id` field is always returned. We can explicitly exclude it "
+"by specifying `{name:1, _id: 0}`."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:249
+msgid ""
+"Aside from the `_id` field, you cannot mix and match inclusion and "
+"exclusion. If you think about it, that actually makes sense. You either want "
+"to select or exclude one or more fields explicitly."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:252
+msgid ""
+"## Ordering ## A few times now I've mentioned that `find` returns a cursor "
+"whose execution is delayed until needed. However, what you've no doubt "
+"observed from the shell is that `find` executes immediately. This is a "
+"behavior of the shell only. We can observe the true behavior of `cursors` by "
+"looking at one of the methods we can chain to `find`. The first that we'll "
+"look at is `sort`. `sort` works a lot like the field selection from the "
+"previous section. We specify the fields we want to sort on, using 1 for "
+"ascending and -1 for descending. For example:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:255
+#, no-wrap
+msgid ""
+"\t//heaviest unicorns first\n"
+"\tdb.unicorns.find().sort({weight: -1})\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:258
+#, no-wrap
+msgid ""
+"\t//by unicorn name then vampire kills:\n"
+"\tdb.unicorns.find().sort({name: 1, vampires: -1})\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:260
+msgid ""
+"Like with a relational database, MongoDB can use an index for sorting. We'll "
+"look at indexes in more detail later on. However, you should know that "
+"MongoDB limits the size of your sort without an index. That is, if you try "
+"to sort a large result set which can't use an index, you'll get an "
+"error. Some people see this as a limitation. In truth, I wish more databases "
+"had the capability to refuse to run unoptimized queries. (I won't turn every "
+"MongoDB drawback into a positive, but I've seen enough poorly optimized "
+"databases that I sincerely wish they had a strict-mode.)"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:263
+msgid ""
+"## Paging ## Paging results can be accomplished via the `limit` and `skip` "
+"cursor methods. To get the second and third heaviest unicorn, we could do:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:265
+#, no-wrap
+msgid "\tdb.unicorns.find().sort({weight: -1}).limit(2).skip(1)\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:267
+msgid ""
+"Using `limit` in conjunction with `sort`, is a good way to avoid running "
+"into problems when sorting on non-indexed fields."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:270
+msgid ""
+"## Count ## The shell makes it possible to execute a `count` directly on a "
+"collection, such as:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:272
+#, no-wrap
+msgid "\tdb.unicorns.count({vampires: {$gt: 50}})\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:274
+msgid ""
+"In reality, `count` is actually a `cursor` method, the shell simply provides "
+"a shortcut. Drivers which don't provide such a shortcut need to be executed "
+"like this (which will also work in the shell):"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:276
+#, no-wrap
+msgid "\tdb.unicorns.find({vampires: {$gt: 50}}).count()\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:279
+msgid ""
+"## In This Chapter ## Using `find` and `cursors` is a straightforward "
+"proposition. There are a few additional commands that we'll either cover in "
+"later chapters or which only serve edge cases, but, by now, you should be "
+"getting pretty comfortable working in the mongo shell and understanding the "
+"fundamentals of MongoDB."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:281
+msgid "\\clearpage"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:284
+msgid ""
+"# Chapter 4 - Data Modeling # Let's shift gears and have a more abstract "
+"conversation about MongoDB. Explaining a few new terms and some new syntax "
+"is a trivial task. Having a conversation about modeling with a new paradigm "
+"isn't as easy. The truth is that most of us are still finding out what works "
+"and what doesn't when it comes to modeling with these new technologies. It's "
+"a conversation we can start having, but ultimately you'll have to practice "
+"and learn on real code."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:286
+msgid ""
+"Compared to most NoSQL solutions, document-oriented databases are probably "
+"the least different, compared to relational databases, when it comes to "
+"modeling. The differences which exist are subtle but that doesn't mean they "
+"aren't important."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:289
+msgid ""
+"## No Joins ## The first and most fundamental difference that you'll need to "
+"get comfortable with is MongoDB's lack of joins. I don't know the specific "
+"reason why some type of join syntax isn't supported in MongoDB, but I do "
+"know that joins are generally seen as non-scalable. That is, once you start "
+"to horizontally split your data, you end up performing your joins on the "
+"client (the application server) anyways. Regardless of the reasons, the fact "
+"remains that data *is* relational, and MongoDB doesn't support joins."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:291
+msgid ""
+"Without knowing anything else, to live in a join-less world, we have to do "
+"joins ourselves within our application's code. Essentially we need to issue "
+"a second query to `find` the relevant data. Setting our data up isn't any "
+"different than declaring a foreign key in a relational database. Let's give "
+"a little less focus to our beautiful `unicorns` and a bit more time to our "
+"`employees`. The first thing we'll do is create an employee (I'm providing "
+"an explicit `_id` so that we can build coherent examples)"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:293
+#, no-wrap
+msgid ""
+"\tdb.employees.insert({_id: ObjectId(\"4d85c7039ab0fd70a117d730\"), name: "
+"'Leto'})\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:295
+msgid "Now let's add a couple employees and set their manager as `Leto`:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:298
+#, no-wrap
+msgid ""
+"\tdb.employees.insert({_id: ObjectId(\"4d85c7039ab0fd70a117d731\"), name: "
+"'Duncan', manager: ObjectId(\"4d85c7039ab0fd70a117d730\")});\n"
+"\tdb.employees.insert({_id: ObjectId(\"4d85c7039ab0fd70a117d732\"), name: "
+"'Moneo', manager: ObjectId(\"4d85c7039ab0fd70a117d730\")});\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:301
+msgid ""
+"(It's worth repeating that the `_id` can be any unique value. Since you'd "
+"likely use an `ObjectId` in real life, we'll use them here as well.)"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:303
+msgid "Of course, to find all of Leto's employees, one simply executes:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:305 en/mongodb.markdown:316
+#, no-wrap
+msgid "\tdb.employees.find({manager: ObjectId(\"4d85c7039ab0fd70a117d730\")})\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:307
+msgid ""
+"There's nothing magical here. In the worst cases, most of the time, the lack "
+"of join will merely require an extra query (likely indexed)."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:310
+msgid ""
+"## Arrays and Embedded Documents ## Just because MongoDB doesn't have joins "
+"doesn't mean it doesn't have a few tricks up its sleeve. Remember when we "
+"quickly saw that MongoDB supports arrays as first class objects of a "
+"document? It turns out that this is incredibly handy when dealing with "
+"many-to-one or many-to-many relationships. As a simple example, if an "
+"employee could have two managers, we could simply store these in an array:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:312
+#, no-wrap
+msgid ""
+"\tdb.employees.insert({_id: ObjectId(\"4d85c7039ab0fd70a117d733\"), name: "
+"'Siona', manager: [ObjectId(\"4d85c7039ab0fd70a117d730\"), "
+"ObjectId(\"4d85c7039ab0fd70a117d732\")] })\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:314
+msgid ""
+"Of particular interest is that, for some documents, `manager` can be a "
+"scalar value, while for others it can be an array. Our original `find` query "
+"will work for both:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:318
+msgid ""
+"You'll quickly find that arrays of values are much more convenient to deal "
+"with than many-to-many join-tables."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:320
+msgid ""
+"Besides arrays, MongoDB also supports embedded documents. Go ahead and try "
+"inserting a document with a nested document, such as:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:322
+#, no-wrap
+msgid ""
+"\tdb.employees.insert({_id: ObjectId(\"4d85c7039ab0fd70a117d734\"), name: "
+"'Ghanima', family: {mother: 'Chani', father: 'Paul', brother: "
+"ObjectId(\"4d85c7039ab0fd70a117d730\")}})\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:324
+msgid ""
+"In case you are wondering, embedded documents can be queried using a "
+"dot-notation:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:326
+#, no-wrap
+msgid "\tdb.employees.find({'family.mother': 'Chani'})\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:328
+msgid ""
+"We'll briefly talk about where embedded documents fit and how you should use "
+"them."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:331
+msgid ""
+"## DBRef ## MongoDB supports something known as `DBRef` which is a "
+"convention many drivers support. When a driver encounters a `DBRef` it can "
+"automatically pull the referenced document. A `DBRef` includes the "
+"collection and id of the referenced document. It generally serves a pretty "
+"specific purpose: when documents from the same collection might reference "
+"documents from a different collection from each other. That is, the `DBRef` "
+"for document1 might point to a document in `managers` whereas the `DBRef` "
+"for document2 might point to a document in `employees`."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:335
+msgid ""
+"## Denormalization ## Yet another alternative to using joins is to "
+"denormalize your data. Historically, denormalization was reserved for "
+"performance-sensitive code, or when data should be snapshotted (like in an "
+"audit log). However, with the ever-growing popularity of NoSQL, many of "
+"which don't have joins, denormalization as part of normal modeling is "
+"becoming increasingly common. This doesn't mean you should duplicate every "
+"piece of information in every document. However, rather than letting fear of "
+"duplicate data drive your design decisions, consider modeling your data "
+"based on what information belongs to what document."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:337
+msgid ""
+"For example, say you are writing a forum application. The traditional way to "
+"associate a specific `user` with a `post` is via a `userid` column within "
+"`posts`. With such a model, you can't display `posts` without retrieving "
+"(joining to) `users`. A possible alternative is simply to store the `name` "
+"as well as the `userid` with each `post`. You could even do so with an "
+"embedded document, like `user: {id: ObjectId('Something'), name: "
+"'Leto'}`. Yes, if you let users change their name, you'll have to update "
+"each document (which is 1 extra query)."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:339
+msgid ""
+"Adjusting to this kind of approach won't come easy to some. In a lot of "
+"cases it won't even make sense to do this. Don't be afraid to experiment "
+"with this approach though. It's not only suitable in some circumstances, but "
+"it can also be the right way to do it."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:342
+msgid ""
+"## Which Should You Choose? ## Arrays of ids are always a useful strategy "
+"when dealing with one-to-many or many-to-many scenarios. It's probably safe "
+"to say that `DBRef` aren't used very often, though you can certainly "
+"experiment and play with them. That generally leaves new developers unsure "
+"about using embedded documents versus doing manual referencing."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:344
+msgid ""
+"First, you should know that an individual document is currently limited to "
+"16 megabytes in size. Knowing that documents have a size limit, though quite "
+"generous, gives you some idea of how they are intended to be used. At this "
+"point, it seems like most developers lean heavily on manual references for "
+"most of their relationships. Embedded documents are frequently leveraged, "
+"but mostly for small pieces of data which we want to always pull with the "
+"parent document. A real world example I've used is to store an `accounts` "
+"document with each user, something like:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:346
+#, no-wrap
+msgid ""
+"\tdb.users.insert({name: 'leto', email: 'leto@dune.gov', account: "
+"{allowed_gholas: 5, spice_ration: 10}})\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:348
+msgid ""
+"That doesn't mean you should underestimate the power of embedded documents "
+"or write them off as something of minor utility. Having your data model map "
+"directly to your objects makes things a lot simpler and often does remove "
+"the need to join. This is especially true when you consider that MongoDB "
+"lets you query and index fields of an embedded document."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:351
+msgid ""
+"## Few or Many Collections ## Given that collections don't enforce any "
+"schema, it's entirely possible to build a system using a single collection "
+"with a mismatch of documents.  From what I've seen, most MongoDB systems are "
+"laid out similarly to what you'd find in a relational system. In other "
+"words, if it would be a table in a relational database, it'll likely be a "
+"collection in MongoDB (many-to-many join tables being an important "
+"exception)."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:353
+msgid ""
+"The conversation gets even more interesting when you consider embedded "
+"documents. The example that frequently comes up is a blog. Should you have a "
+"`posts` collection and a `comments` collection, or should each `post` have "
+"an array of `comments` embedded within it. Setting aside the 16MB document "
+"size limit for the time being (all of Hamlet is less than 200KB, just how "
+"popular is your blog?), most developers still prefer to separate things "
+"out. It's simply cleaner and more explicit."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:355
+msgid ""
+"There's no hard rule (well, aside from 16MB). Play with different approaches "
+"and you'll get a sense of what does and does not feel right."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:358
+msgid ""
+"## In This Chapter ## Our goal in this chapter was to provide some helpful "
+"guidelines for modeling your data in MongoDB. A starting point if you "
+"will. Modeling in a document-oriented system is different, but not too "
+"different than a relational world. You have a bit more flexibility and one "
+"constraint, but for a new system, things tend to fit quite nicely. The only "
+"way you can go wrong is by not trying."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:361
+msgid ""
+"# Chapter 5 - When To Use MongoDB # By now you should have a good enough "
+"understanding of MongoDB to have a feel for where and how it might fit into "
+"your existing system. There are enough new and competing storage "
+"technologies that it's easy to get overwhelmed by all of the choices."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:363
+msgid ""
+"For me, the most important lesson, which has nothing to do with MongoDB, is "
+"that you no longer have to rely on a single solution for dealing with your "
+"data. No doubt, a single solution has obvious advantages and for a lot "
+"projects, possibly even most, a single solution is the sensible "
+"approach. The idea isn't that you must use different technologies, but "
+"rather that you can. Only you know whether the benefits of introducing a new "
+"solution outweigh the costs."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:365
+msgid ""
+"With that said, I'm hopeful that what you've seen so far has made you see "
+"MongoDB as a general solution. It's been mentioned a couple times that "
+"document-oriented databases share a lot in common with relational "
+"databases. Therefore, rather than tiptoeing around it, let's simply state "
+"that MongoDB should be seen as a direct alternative to relational "
+"databases. Where one might see Lucene as enhancing a relational database "
+"with full text indexing, or Redis as a persistent key-value store, MongoDB "
+"is a central repository for your data."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:367
+msgid ""
+"Notice that I didn't call MongoDB a *replacement* for relational databases, "
+"but rather an *alternative*. It's a tool that can do what a lot of other "
+"tools can do. Some of it MongoDB does better, some of it MongoDB does "
+"worse. Let's dissect things a little further."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:370
+msgid ""
+"## Schema-less ## An oft-touted benefit of document-oriented database is "
+"that they are schema-less. This makes them much more flexible than "
+"traditional database tables. I agree that schema-less is a nice feature, but "
+"not for the main reason most people mention."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:372
+msgid ""
+"People talk about schema-less as though you'll suddenly start storing a "
+"crazy mismatch of data. There are domains and data sets which can really be "
+"a pain to model using relational databases, but I see those as edge "
+"cases. Schema-less is cool, but most of your data is going to be highly "
+"structured. It's true that having an occasional mismatch can be handy, "
+"especially when you introduce new features, but in reality it's nothing a "
+"nullable column probably wouldn't solve just as well."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:374
+msgid ""
+"For me, the real benefit of schema-less design is the lack of setup and the "
+"reduced friction with OOP. This is particularly true when you're working "
+"with a static language. I've worked with MongoDB in both C# and Ruby, and "
+"the difference is striking. Ruby's dynamism and its popular ActiveRecord "
+"implementations already reduce much of the object-relational impedance "
+"mismatch. That isn't to say MongoDB isn't a good match for Ruby, it really "
+"is. Rather, I think most Ruby developers would see MongoDB as an incremental "
+"improvement, whereas C# or Java developers would see a fundamental shift in "
+"how they interact with their data."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:376
+msgid ""
+"Think about it from the perspective of a driver developer. You want to save "
+"an object? Serialize it to JSON (technically BSON, but close enough) and "
+"send it to MongoDB. There is no property mapping or type mapping. This "
+"straightforwardness definitely flows to you, the end developer."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:379
+msgid ""
+"## Writes ## One area where MongoDB can fit a specialized role is in "
+"logging. There are two aspects of MongoDB which make writes quite "
+"fast. First, you can send a write command and have it return immediately "
+"without waiting for it to actually write. Secondly, with the introduction of "
+"journaling in 1.8, and enhancements made in 2.0, you can control the write "
+"behavior with respect to data durability. These settings, in addition to "
+"specifying how many servers should get your data before being considered "
+"successful, are configurable per-write, giving you a great level of control "
+"over write performance and data durability."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:381
+msgid ""
+"In addition to these performance factors, log data is one of those data sets "
+"which can often take advantage of schema-less collections. Finally, MongoDB "
+"has something called a [capped "
+"collection](http://www.mongodb.org/display/DOCS/Capped+Collections). So far, "
+"all of the implicitly created collections we've created are just normal "
+"collections. We can create a capped collection by using the "
+"`db.createCollection` command and flagging it as capped:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:384
+#, no-wrap
+msgid ""
+"\t//limit our capped collection to 1 megabyte\n"
+"\tdb.createCollection('logs', {capped: true, size: 1048576})\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:386
+msgid ""
+"When our capped collection reaches its 1MB limit, old documents are "
+"automatically purged. A limit on the number of documents, rather than the "
+"size, can be set using `max`. Capped collections have some interesting "
+"properties. For example, you can update a document but it can't grow in "
+"size. Also, the insertion order is preserved, so you don't need to add an "
+"extra index to get proper time-based sorting."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:388
+msgid ""
+"This is a good place to point out that if you want to know whether your "
+"write encountered any errors (as opposed to the default fire-and-forget), "
+"you simply issue a follow-up command: `db.getLastError()`. Most drivers "
+"encapsulate this as a *safe write*, say by specifying `{:safe => true}` as a "
+"second parameter to `insert`."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:391
+msgid ""
+"## Durability ## Prior to version 1.8, MongoDB didn't have single-server "
+"durability. That is, a server crash would likely result in lost data. The "
+"solution had always been to run MongoDB in a multi-server setup (MongoDB "
+"supports replication). One of the major features added to 1.8 was "
+"journaling. To enable it add a new line with `journal=true` to the "
+"`mongodb.config` file we created when we first setup MongoDB (and restart "
+"your server if you want it enabled right away). You probably want journaling "
+"enabled (it'll be a default in a future release). Although, in some "
+"circumstances the extra throughput you get from disabling journaling might "
+"be a risk you are willing to take. (It's worth pointing out that some types "
+"of applications can easily afford to lose data)."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:393
+msgid ""
+"Durability is only mentioned here because a lot has been made around "
+"MongoDB's lack of single-server durability. This'll likely show up in Google "
+"searches for some time to come. Information you find about this missing "
+"feature is simply out of date."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:396
+msgid ""
+"## Full Text Search ## True full text search capability is something that'll "
+"hopefully come to MongoDB in a future release. With its support for arrays, "
+"basic full text search is pretty easy to implement. For something more "
+"powerful, you'll need to rely on a solution such as Lucene/Solr. Of course, "
+"this is also true of many relational databases."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:399
+msgid ""
+"## Transactions ## MongoDB doesn't have transactions. It has two "
+"alternatives, one which is great but with limited use, and the other that is "
+"a cumbersome but flexible."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:401
+msgid ""
+"The first is its many atomic operations. These are great, so long as they "
+"actually address your problem. We already saw some of the simpler ones, like "
+"`$inc` and `$set`. There are also commands like `findAndModify` which can "
+"update or delete a document and return it atomically."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:403
+msgid ""
+"The second, when atomic operations aren't enough, is to fall back to a "
+"two-phase commit. A two-phase commit is to transactions what manual "
+"dereferencing is to joins. It's a storage-agnostic solution that you do in "
+"code.  Two-phase commits are actually quite popular in the relational world "
+"as a way to implement transactions across multiple databases. The MongoDB "
+"website [has an "
+"example](http://www.mongodb.org/display/DOCS/two-phase+commit) illustrating "
+"the most common scenario (a transfer of funds). The general idea is that you "
+"store the state of the transaction within the actual document being updated "
+"and go through the init-pending-commit/rollback steps manually."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:405
+msgid ""
+"MongoDB's support for nested documents and schema-less design makes "
+"two-phase commits slightly less painful, but it still isn't a great process, "
+"especially when you are just getting started with it."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:408
+msgid ""
+"## Data Processing ## MongoDB relies on MapReduce for most data processing "
+"jobs. It has some [basic "
+"aggregation](http://www.mongodb.org/display/DOCS/Aggregation) capabilities, "
+"but for anything serious, you'll want to use MapReduce. In the next chapter "
+"we'll look at MapReduce in detail. For now you can think of it as a very "
+"powerful and different way to `group by` (which is an understatement). One "
+"of MapReduce's strengths is that it can be parallelized for working with "
+"large sets of data. However, MongoDB's implementation relies on JavaScript "
+"which is single-threaded. The point? For processing of large data, you'll "
+"likely need to rely on something else, such as Hadoop. Thankfully, since the "
+"two systems really do complement each other, there's a [MongoDB adapter for "
+"Hadoop](https://github.com/mongodb/mongo-hadoop)."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:410
+msgid ""
+"Of course, parallelizing data processing isn't something relational "
+"databases excel at either. There are plans for future versions of MongoDB to "
+"be better at handling very large sets of data."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:413
+msgid ""
+"## Geospatial ## A particularly powerful feature of MongoDB is its support "
+"for geospatial indexes. This allows you to store x and y coordinates within "
+"documents and then find documents that are `$near` a set of coordinates or "
+"`$within` a box or circle. This is a feature best explained via some visual "
+"aids, so I invite you to try the [5 minute geospatial interactive "
+"tutorial](http://tutorial.mongly.com/geo/index), if you want to learn more."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:416
+msgid ""
+"## Tools and Maturity ## You probably already know the answer to this, but "
+"MongoDB is obviously younger than most relational database systems. This is "
+"absolutely something you should consider. How much a factor it plays depends "
+"on what you are doing and how you are doing it. Nevertheless, an honest "
+"assessment simply can't ignore the fact that MongoDB is younger and the "
+"available tooling around isn't great (although the tooling around a lot of "
+"very mature relational databases is pretty horrible too!). As an example, "
+"the lack of support for base-10 floating point numbers will obviously be a "
+"concern (though not necessarily a show-stopper) for systems dealing with "
+"money."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:418
+msgid ""
+"On the positive side, drivers exist for a great many languages, the protocol "
+"is modern and simple, and development is happening at blinding "
+"speeds. MongoDB is in production at enough companies that concerns about "
+"maturity, while valid, are quickly becoming a thing of the past."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:421
+msgid ""
+"## In This Chapter ## The message from this chapter is that MongoDB, in most "
+"cases, can replace a relational database. It's much simpler and "
+"straightforward; it's faster and generally imposes fewer restrictions on "
+"application developers. The lack of transactions can be a legitimate and "
+"serious concern. However, when people ask *where does MongoDB sit with "
+"respect to the new data storage landscape?* the answer is simple: **right in "
+"the middle**."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:424
+msgid ""
+"# Chapter 6 - MapReduce # MapReduce is an approach to data processing which "
+"has two significant benefits over more traditional solutions. The first, and "
+"main, reason it was developed is performance. In theory, MapReduce can be "
+"parallelized, allowing very large sets of data to be processed across many "
+"cores/CPUs/machines. As we just mentioned, this isn't something MongoDB is "
+"currently able to take advantage of. The second benefit of MapReduce is that "
+"you get to write real code to do your processing. Compared to what you'd be "
+"able to do with SQL, MapReduce code is infinitely richer and lets you push "
+"the envelope further before you need to use a more specialized solution."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:426
+msgid ""
+"MapReduce is a pattern that has grown in popularity, and you can make use of "
+"it almost anywhere; C#, Ruby, Java, Python and so on all have "
+"implementations. I want to warn you that at first this'll seem very "
+"different and complicated. Don't get frustrated, take your time and play "
+"with it yourself. This is worth understanding whether you are using MongoDB "
+"or not."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:429
+msgid ""
+"## A Mix of Theory and Practice ## MapReduce is a two-step process. First "
+"you map and then you reduce. The mapping step transforms the inputted "
+"documents and emits a key=>value pair (the key and/or value can be "
+"complex). The reduce gets a key and the array of values emitted for that key "
+"and produces the final result. We'll look at each step, and the output of "
+"each step."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:431
+msgid ""
+"The example that we'll be using is to generate a report of the number of "
+"hits, per day, we get on a resource (say a webpage). This is the *hello "
+"world* of MapReduce. For our purposes, we'll rely on a `hits` collection "
+"with two fields: `resource` and `date`. Our desired output is a breakdown by "
+"`resource`, `year`, `month`, `day` and `count`."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:433
+msgid "Given the following data in `hits`:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:445
+#, no-wrap
+msgid ""
+"\tresource     date\n"
+"\tindex        Jan 20 2010 4:30\n"
+"\tindex        Jan 20 2010 5:30\n"
+"\tabout        Jan 20 2010 6:00\n"
+"\tindex        Jan 20 2010 7:00\n"
+"\tabout        Jan 21 2010 8:00\n"
+"\tabout        Jan 21 2010 8:30\n"
+"\tindex        Jan 21 2010 8:30\n"
+"\tabout        Jan 21 2010 9:00\n"
+"\tindex        Jan 21 2010 9:30\n"
+"\tindex        Jan 22 2010 5:00\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:447
+msgid "We'd expect the following output:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:454
+#, no-wrap
+msgid ""
+"\tresource  year   month   day   count\n"
+"\tindex     2010   1       20    3\n"
+"\tabout     2010   1       20    1\n"
+"\tabout     2010   1       21    3\n"
+"\tindex     2010   1       21    2\n"
+"\tindex     2010   1       22    1\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:456
+msgid ""
+"(The nice thing about this type of approach to analytics is that by storing "
+"the output, reports are fast to generate and data growth is controlled (per "
+"resource that we track, we'll add at most 1 document per day.)"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:458
+msgid ""
+"For the time being, focus on understanding the concept. At the end of this "
+"chapter, sample data and code will be given for you to try on your own."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:460
+msgid ""
+"The first thing to do is look at the map function. The goal of map is to "
+"make it emit a value which can be reduced. It's possible for map to emit 0 "
+"or more times. In our case, it'll always emit once (which is "
+"common). Imagine map as looping through each document in hits. For each "
+"document we want to emit a key with resource, year, month and day, and a "
+"simple value of 1:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:470
+#, no-wrap
+msgid ""
+"\tfunction() {\n"
+"\t\tvar key = {\n"
+"\t\t    resource: this.resource,\n"
+"\t\t    year: this.date.getFullYear(),\n"
+"\t\t    month: this.date.getMonth(),\n"
+"\t\t    day: this.date.getDate()\n"
+"\t\t};\n"
+"\t\temit(key, {count: 1});\n"
+"\t}\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:472
+msgid ""
+"`this` refers to the current document being inspected. Hopefully what'll "
+"help make this clear for you is to see what the output of the mapping step "
+"is. Using our above data, the complete output would be:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:478
+#, no-wrap
+msgid ""
+"\t{resource: 'index', year: 2010, month: 0, day: 20} => [{count: 1}, {count: "
+"1}, {count:1}]\n"
+"\t{resource: 'about', year: 2010, month: 0, day: 20} => [{count: 1}]\n"
+"\t{resource: 'about', year: 2010, month: 0, day: 21} => [{count: 1}, {count: "
+"1}, {count:1}]\n"
+"\t{resource: 'index', year: 2010, month: 0, day: 21} => [{count: 1}, {count: "
+"1}]\n"
+"\t{resource: 'index', year: 2010, month: 0, day: 22} => [{count: 1}]\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:480
+msgid ""
+"Understanding this intermediary step is the key to understanding "
+"MapReduce. The values from emit are grouped together, as arrays, by "
+"key. .NET and Java developers can think of it as being of type "
+"`IDictionary<object, IList<object>>` (.NET) or `HashMap<Object, ArrayList>` "
+"(Java)."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:482
+msgid "Let's change our map function in some contrived way:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:491
+#, no-wrap
+msgid ""
+"\tfunction() {\n"
+"\t\tvar key = {resource: this.resource, year: this.date.getFullYear(), "
+"month: this.date.getMonth(), day: this.date.getDate()};\n"
+"\t\tif (this.resource == 'index' && this.date.getHours() == 4) {\n"
+"\t\t\temit(key, {count: 5});\n"
+"\t\t} else {\n"
+"\t\t\temit(key, {count: 1});\n"
+"\t\t}\n"
+"\t}\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:493
+msgid "The first intermediary output would change to:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:495
+#, no-wrap
+msgid ""
+"\t{resource: 'index', year: 2010, month: 0, day: 20} => [{count: 5}, {count: "
+"1}, {count:1}]\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:497
+msgid "Notice how each emit generates a new value which is grouped by our key."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:499
+msgid ""
+"The reduce function takes each of these intermediary results and outputs a "
+"final result. Here's what ours looks like:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:507
+#, no-wrap
+msgid ""
+"\tfunction(key, values) {\n"
+"\t\tvar sum = 0;\n"
+"\t\tvalues.forEach(function(value) {\n"
+"\t\t\tsum += value['count'];\n"
+"\t\t});\n"
+"\t\treturn {count: sum};\n"
+"\t};\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:509
+msgid "Which would output:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:515
+#, no-wrap
+msgid ""
+"\t{resource: 'index', year: 2010, month: 0, day: 20} => {count: 3}\n"
+"\t{resource: 'about', year: 2010, month: 0, day: 20} => {count: 1}\n"
+"\t{resource: 'about', year: 2010, month: 0, day: 21} => {count: 3}\n"
+"\t{resource: 'index', year: 2010, month: 0, day: 21} => {count: 2}\n"
+"\t{resource: 'index', year: 2010, month: 0, day: 22} => {count: 1}\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:517
+msgid "Technically, the output in MongoDB is:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:519
+#, no-wrap
+msgid ""
+"\t_id: {resource: 'home', year: 2010, month: 0, day: 20}, value: {count: "
+"3}\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:521
+msgid "Hopefully you've noticed that this is the final result we were after."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:523
+msgid ""
+"If you've really been paying attention, you might be asking yourself *why "
+"didn't we simply use `sum = values.length`?* This would seem like an "
+"efficient approach when you are essentially summing an array of 1s. The fact "
+"is that reduce isn't always called with a full and perfect set of "
+"intermediate data. For example, instead of being called with:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:525
+#, no-wrap
+msgid ""
+"\t{resource: 'home', year: 2010, month: 0, day: 20} => [{count: 1}, {count: "
+"1}, {count:1}]\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:527
+msgid "Reduce could be called with:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:530
+#, no-wrap
+msgid ""
+"\t{resource: 'home', year: 2010, month: 0, day: 20} => [{count: 1}, {count: "
+"1}]\n"
+"\t{resource: 'home', year: 2010, month: 0, day: 20} => [{count: 2}, {count: "
+"1}]\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:532
+msgid ""
+"The final output is the same (3), the path taken is simply different. As "
+"such, reduce must always be idempotent. That is, calling reduce multiple "
+"times should generate the same result as calling it once."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:534
+msgid ""
+"We aren't going to cover it here but it's common to chain reduce methods "
+"when performing more complex analysis."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:537
+msgid ""
+"## Pure Practical ## With MongoDB we use the `mapReduce` command on a "
+"collection. `mapReduce` takes a map function, a reduce function and an "
+"output directive. In our shell we can create and pass a JavaScript "
+"function. From most libraries you supply a string of your functions (which "
+"is a bit ugly). First though, let's create our simple data set:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:548
+#, no-wrap
+msgid ""
+"\tdb.hits.insert({resource: 'index', date: new Date(2010, 0, 20, 4, 30)});\n"
+"\tdb.hits.insert({resource: 'index', date: new Date(2010, 0, 20, 5, 30)});\n"
+"\tdb.hits.insert({resource: 'about', date: new Date(2010, 0, 20, 6, 0)});\n"
+"\tdb.hits.insert({resource: 'index', date: new Date(2010, 0, 20, 7, 0)});\n"
+"\tdb.hits.insert({resource: 'about', date: new Date(2010, 0, 21, 8, 0)});\n"
+"\tdb.hits.insert({resource: 'about', date: new Date(2010, 0, 21, 8, 30)});\n"
+"\tdb.hits.insert({resource: 'index', date: new Date(2010, 0, 21, 8, 30)});\n"
+"\tdb.hits.insert({resource: 'about', date: new Date(2010, 0, 21, 9, 0)});\n"
+"\tdb.hits.insert({resource: 'index', date: new Date(2010, 0, 21, 9, 30)});\n"
+"\tdb.hits.insert({resource: 'index', date: new Date(2010, 0, 22, 5, 0)});\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:550
+msgid ""
+"Now we can create our map and reduce functions (the MongoDB shell accepts "
+"multi-line statements, you'll see *...* after hitting enter to indicate more "
+"text is expected):"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:555
+#, no-wrap
+msgid ""
+"\tvar map = function() {\n"
+"\t\tvar key = {resource: this.resource, year: this.date.getFullYear(), "
+"month: this.date.getMonth(), day: this.date.getDate()};\n"
+"\t\temit(key, {count: 1});\n"
+"\t};\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:563
+#, no-wrap
+msgid ""
+"\tvar reduce = function(key, values) {\n"
+"\t\tvar sum = 0;\n"
+"\t\tvalues.forEach(function(value) {\n"
+"\t\t\tsum += value['count'];\n"
+"\t\t});\n"
+"\t\treturn {count: sum};\n"
+"\t};\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:565
+msgid ""
+"Which we can use the `mapReduce` command against our `hits` collection by "
+"doing:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:567
+#, no-wrap
+msgid "\tdb.hits.mapReduce(map, reduce, {out: {inline:1}})\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:569
+msgid ""
+"If you run the above, you should see the desired output. Setting `out` to "
+"`inline` means that the output from `mapReduce` is immediately streamed back "
+"to us. This is currently limited for results that are 16 megabytes or "
+"less. We could instead specify `{out: 'hit_stats'}` and have the results "
+"stored in the `hit_stats` collections:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:572
+#, no-wrap
+msgid ""
+"\tdb.hits.mapReduce(map, reduce, {out: 'hit_stats'});\n"
+"\tdb.hit_stats.find();\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:574
+msgid ""
+"When you do this, any existing data in `hit_stats` is lost. If we did `{out: "
+"{merge: 'hit_stats'}}` existing keys would be replaced with the new values "
+"and new keys would be inserted as new documents. Finally, we can `out` using "
+"a `reduce` function to handle more advanced cases (such an doing an upsert)."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:576
+msgid ""
+"The third parameter takes additional options, for example we could filter, "
+"sort and limit the documents that we want analyzed. We can also supply a "
+"`finalize` method to be applied to the results after the `reduce` step."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:579
+msgid ""
+"## In This Chapter ## This is the first chapter where we covered something "
+"truly different. If it made you uncomfortable, remember that you can always "
+"use MongoDB's other [aggregation "
+"capabilities](http://www.mongodb.org/display/DOCS/Aggregation) for simpler "
+"scenarios. Ultimately though, MapReduce is one of MongoDB's most compelling "
+"features. The key to really understanding how to write your map and reduce "
+"functions is to visualize and understand the way your intermediary data will "
+"look coming out of `map` and heading into `reduce`."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:582
+msgid ""
+"# Chapter 7 - Performance and Tools # In this last chapter, we look at a few "
+"performance topics as well as some of the tools available to MongoDB "
+"developers. We won't dive deeply into either topic, but we will examine the "
+"most import aspects of each."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:585
+msgid ""
+"## Indexes ## At the very beginning we saw the special `system.indexes` "
+"collection which contains information on all the indexes in our "
+"database. Indexes in MongoDB work a lot like indexes in a relational "
+"database: they help improve query and sorting performance. Indexes are "
+"created via `ensureIndex`:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:588
+#, no-wrap
+msgid ""
+"\t// where \"name\" is the fieldname\n"
+"\tdb.unicorns.ensureIndex({name: 1});\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:590
+msgid "And dropped via `dropIndex`:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:592
+#, no-wrap
+msgid "\tdb.unicorns.dropIndex({name: 1});\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:594
+msgid ""
+"A unique index can be created by supplying a second parameter and setting "
+"`unique` to `true`:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:596
+#, no-wrap
+msgid "\tdb.unicorns.ensureIndex({name: 1}, {unique: true});\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:598
+msgid ""
+"Indexes can be created on embedded fields (again, using the dot-notation) "
+"and on array fields. We can also create compound indexes:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:600
+#, no-wrap
+msgid "\tdb.unicorns.ensureIndex({name: 1, vampires: -1});\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:602
+msgid ""
+"The order of your index (1 for ascending, -1 for descending) doesn't matter "
+"for a single key index, but it can have an impact for compound indexes when "
+"you are sorting or using a range condition."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:604
+msgid ""
+"The [indexes page](http://www.mongodb.org/display/DOCS/Indexes) has "
+"additional information on indexes."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:607
+msgid ""
+"## Explain ## To see whether or not your queries are using an index, you can "
+"use the `explain` method on a cursor:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:609
+#, no-wrap
+msgid "\tdb.unicorns.find().explain()\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:611
+msgid ""
+"The output tells us that a `BasicCursor` was used (which means non-indexed), "
+"12 objects were scanned, how long it took, what index, if any was used as "
+"well as a few other pieces of useful information."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:613
+msgid ""
+"If we change our query to use an index, we'll see that a `BtreeCursor` was "
+"used, as well as the index used to fulfill the request:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:615
+#, no-wrap
+msgid "\tdb.unicorns.find({name: 'Pilot'}).explain()\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:618
+msgid ""
+"## Fire And Forget Writes ## We previously mentioned that, by default, "
+"writes in MongoDB are fire-and-forget. This can result in some nice "
+"performance gains at the risk of losing data during a crash. An interesting "
+"side effect of this type of write is that an error is not returned when an "
+"insert/update violates a unique constraint. In order to be notified about a "
+"failed write, one must call `db.getLastError()` after an insert. Many "
+"drivers abstract this detail away and provide a way to do a *safe* write - "
+"often via an extra parameter."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:620
+msgid ""
+"Unfortunately, the shell automatically does safe inserts, so we can't easily "
+"see this behavior in action."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:623
+msgid ""
+"## Sharding ## MongoDB supports auto-sharding. Sharding is an approach to "
+"scalability which separates your data across multiple servers. A naive "
+"implementation might put all of the data for users with a name that starts "
+"with A-M on server 1 and the rest on server 2. Thankfully, MongoDB's "
+"sharding capabilities far exceed such a simple algorithm. Sharding is a "
+"topic well beyond the scope of this book, but you should know that it exists "
+"and that you should consider it should your needs grow beyond a single "
+"server."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:626
+msgid ""
+"## Replication ## MongoDB replication works similarly to how relational "
+"database replication works. Writes are sent to a single server, the master, "
+"which then synchronizes itself to one or more other servers, the slaves. You "
+"can control whether reads can happen on slaves or not, which can help "
+"distribute your load at the risk of reading slightly stale data. If the "
+"master goes down, a slave can be promoted to act as the new master. Again, "
+"MongoDB replication is outside the scope of this book."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:628
+#, no-wrap
+msgid ""
+" While replication can improve performance (by distributing reads), its main "
+"purpose is to increase reliability. Combining replication with sharding is a "
+"common approach. For example, each shard could be made up of a master and a "
+"slave. (Technically you'll also need an arbiter to help break a tie should "
+"two slaves try to become masters. But an arbiter requires very few resources "
+"and can be used for multiple shards.)\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:631
+msgid ""
+"## Stats ## You can obtain statistics on a database by typing "
+"`db.stats()`. Most of the information deals with the size of your "
+"database. You can also get statistics on a collection, say `unicorns`, by "
+"typing `db.unicorns.stats()`. Again, most of this information relates to the "
+"size of your collection."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:634
+msgid ""
+"## Web Interface ## Included in the information displayed on MongoDB's "
+"startup was a link to a web-based administrative tool (you might still be "
+"able to see if if you scroll your command/terminal window up to the point "
+"where you started `mongod`). You can access this by pointing your browser to "
+"<http://localhost:28017/>. To get the most out of it, you'll want to add "
+"`rest=true` to your config and restart the `mongod` process. The web "
+"interface gives you a lot of insight into the current state of your server."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:637
+msgid "## Profiler ## You can enable the MongoDB profiler by executing:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:639
+#, no-wrap
+msgid "\tdb.setProfilingLevel(2);\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:641
+msgid "With it enabled, we can run a command:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:643
+#, no-wrap
+msgid "\tdb.unicorns.find({weight: {$gt: 600}});\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:645
+msgid "And then examine the profiler:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:647
+#, no-wrap
+msgid "\tdb.system.profile.find()\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:649
+msgid ""
+"The output tells us what was run and when, how many documents were scanned, "
+"and how much data was returned."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:651
+msgid ""
+"You can disable the profiler by calling `setProfileLevel` again but changing "
+"the argument to `0`. Another option is to specify `1` which will only "
+"profile queries that take more than 100 milliseconds. Or, you can specify "
+"the minimum time, in milliseconds, with a second parameter:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:654
+#, no-wrap
+msgid ""
+"\t//profile anything that takes more than 1 second\n"
+"\tdb.setProfilingLevel(1, 1000);\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:657
+msgid ""
+"## Backups and Restore ## Within the MongoDB `bin` folder is a `mongodump` "
+"executable. Simply executing `mongodump` will connect to localhost and "
+"backup all of your databases to a `dump` subfolder. You can type `mongodump "
+"--help` to see additional options. Common options are `--db DBNAME` to back "
+"up a specific database and `--collection COLLECTIONAME` to back up a "
+"specific collection. You can then use the `mongorestore` executable, located "
+"in the same `bin` folder, to restore a previously made backup. Again, the "
+"`--db` and `--collection` can be specified to restore a specific database "
+"and/or collection."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:659
+msgid ""
+"For example, to back up our `learn` database to a `backup` folder, we'd "
+"execute (this is its own executable which you run in a command/terminal "
+"window, not within the mongo shell itself):"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:661
+#, no-wrap
+msgid "\tmongodump --db learn --out backup\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:663
+msgid "To restore only the `unicorns` collection, we could then do:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:665
+#, no-wrap
+msgid "\tmongorestore --collection unicorns backup/learn/unicorns.bson\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:667
+msgid ""
+"It's worth pointing out that `mongoexport` and `mongoimport` are two other "
+"executables which can be used to export and import data from JSON or "
+"CSV. For example, we can get a JSON output by doing:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:669
+#, no-wrap
+msgid "\tmongoexport --db learn -collection unicorns\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:671
+msgid "And a CSV output by doing:"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:673
+#, no-wrap
+msgid ""
+"\tmongoexport --db learn -collection unicorns --csv -fields "
+"name,weight,vampires\n"
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:675
+msgid ""
+"Note that `mongoexport` and `mongoimport` cannot always represent your "
+"data. Only `mongodump` and `mongorestore` should ever be used for actual "
+"backups."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:678
+msgid ""
+"## In This Chapter ## In this chapter we looked a various commands, tools "
+"and performance details of using MongoDB. We haven't touched on everything, "
+"but we've looked at the most common ones. Indexing in MongoDB is similar to "
+"indexing with relational databases, as are many of the tools. However, with "
+"MongoDB, many of these are to the point and simple to use."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:681
+msgid ""
+"# Conclusion # You should have enough information to start using MongoDB in "
+"a real project. There's more to MongoDB than what we've covered, but your "
+"next priority should be putting together what we've learned, and getting "
+"familiar with the driver you'll be using. The [MongoDB "
+"website](http://www.mongodb.com/) has a lot of useful information. The "
+"official [MongoDB user group](http://groups.google.com/group/mongodb-user) "
+"is a great place to ask questions."
+msgstr ""
+
+#. type: Plain text
+#: en/mongodb.markdown:682
+msgid ""
+"NoSQL was born not only out of necessity, but also out of an interest to try "
+"new approaches. It is an acknowledgement that our field is ever advancing "
+"and that if we don't try, and sometimes fail, we can never succeed. This, I "
+"think, is a good way to lead our professional lives."
+msgstr ""

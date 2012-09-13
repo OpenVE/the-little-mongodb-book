@@ -37,3 +37,29 @@ Pandoc uses TeX as a buffer tool to generate PDF files, so you need to have TeX 
 
 ## Title Image ##
 A PSD of the title image is included. The font used is [Comfortaa](http://www.dafont.com/comfortaa.font).
+
+## Translations ##
+
+[po4a](http://po4a.alioth.debian.org/) is used to manage translations. Please ensure you have it installed before trying to generate translated output or before translating the book.
+
+### Adding a new translation ###
+
+Adding a new translation is as easy as running:
+
+* `make LANG=<xx> createpo`
+
+Where `<xx>` is the two letters language code for the new translation. It will generate a .po file in `languages/xx` which you can then translate using your favorite PO editor.
+
+### Updating translations ###
+
+Update existant translations by running:
+
+* `make LANG=<xx> updatepo`
+
+### Creating translated output documents ###
+
+To create a translated version of the book, you will need to run:
+
+* `make <xx>/mongodb.<fmt>`
+
+Where <fmt> is the desired output format as described in [Formats].
