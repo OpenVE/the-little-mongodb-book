@@ -48,7 +48,7 @@ Adding a new translation is as easy as running:
 
 * `make LANG=<xx> createpo`
 
-Where `<xx>` is the two letters language code for the new translation. It will generate a .po file in `languages/xx` which you can then translate using your favorite PO editor.
+Where `<xx>` is the two letters language code for the new translation. It will generate a .po file in `locale/xx` which you can then translate using your favorite PO editor.
 
 ### Updating translations ###
 
@@ -62,4 +62,4 @@ To create a translated version of the book, you will need to run:
 
 * `make <xx>/mongodb.<fmt>`
 
-Where <fmt> is the desired output format as described in [Formats].
+Where <fmt> is the desired output format as described in [Formats][].

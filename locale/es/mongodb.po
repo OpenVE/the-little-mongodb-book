@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2012-09-12 20:08-0530\n"
-"PO-Revision-Date: 2012-09-12 23:16-0430\n"
+"PO-Revision-Date: 2012-09-13 22:45-0430\n"
 "Last-Translator: Sebasti�n Ram�rez <sebasmagri@gmail.com>\n"
 "Language-Team: Spanish <sebasmagri@gmail.com>\n"
 "Language: es\n"
@@ -273,6 +273,9 @@ msgid ""
 "your own. It's easy to get up and running with MongoDB, so let's take a few "
 "minutes now to set things up."
 msgstr ""
+"A medida que vaya leyendo, le recomiendo jugar con MongoDB para replicar lo que \n"
+"voy demostrando así como para explorar preguntas que podrían salir por su propia \n"
+"cuenta. Correr MongoDB es fácil, así que tomemos unos minutos para configurar todo."
 
 #. type: Bullet: '1. '
 #: en/mongodb.markdown:50
@@ -282,6 +285,10 @@ msgid ""
 "for your operating system of choice. For development purposes, you can pick "
 "either 32-bit or 64-bit."
 msgstr ""
+"Vaya a la [página oficial de descarga](http://www.mongodb.org/downloads) \n"
+"y obtenga los binarios de la primera fila (la versión estable recomendada) \n"
+"para su sistema operativo. Para fines de desarrollo, puede escojer tanto 32-bit\n"
+"como 64-bit."
 
 #. type: Bullet: '2. '
 #: en/mongodb.markdown:52
@@ -291,11 +298,15 @@ msgid ""
 "server process and `mongo` is the client shell - these are the two "
 "executables we'll be spending most of our time with."
 msgstr ""
+"Extraiga el archivo donde desee, y navegue al directorio `bin`. No ejecute \n"
+"nada por ahora, pero serpa que `mongod` es el proceso del servidor y `mongo` \n"
+"es el intérprete del cliente - esos son los dos ejecutables con los que \n"
+"pasaremos más tiempo."
 
 #. type: Bullet: '3. '
 #: en/mongodb.markdown:54
 msgid "Create a new text file in the `bin` subfolder named `mongodb.config`"
-msgstr ""
+msgstr "Cree un nuevo archivo de texto en el directorio `bin` llamado `mongodb.config`"
 
 #. type: Bullet: '4. '
 #: en/mongodb.markdown:56
@@ -305,16 +316,20 @@ msgid ""
 "on Windows you might do `dbpath=c:\\mongodb\\data` and on Linux you might do "
 "`dbpath=/var/lib/mongodb/data`."
 msgstr ""
+"Añada una línea a su `mongodb.config`: \n"
+"`dbpath=RUTA_DONDE_DESEA_GUARDAR_LOS_ARCHIVOS_DE_LA_BASE_DE_DATOS`. Por ejemplo, \n"
+"en Windows usted podría usar `dbpatch=c:\\mongodb\\data\\` y en Linux \n"
+"`dbpath=/var/lib/mongodb/data`."
 
 #. type: Bullet: '5. '
 #: en/mongodb.markdown:58
 msgid "Make sure the `dbpath` you specified exists"
-msgstr ""
+msgstr "Asegúrese de que la ruta que especificó en `dbpath` existe."
 
 #. type: Bullet: '6. '
 #: en/mongodb.markdown:60
 msgid "Launch mongod with the `--config /path/to/your/mongodb.config` parameter."
-msgstr ""
+msgstr "Ejecute mongod con el parámetro `--config /ruta/a/su/mongodb.config`."
 
 #. type: Plain text
 #: en/mongodb.markdown:62
@@ -326,6 +341,11 @@ msgid ""
 "prompt via `c:\\mongodb\\bin\\mongod --config "
 "c:\\mongodb\\bin\\mongodb.config`."
 msgstr ""
+"Como ejemplo para usuarios de Windows, si usted extrajo el archivo descargado en \n"
+"`C:\\mongodb\\` y creó `c:\\mongodb\\data\\`, entonces en \n"
+"`c:\\mongodb\\bin\\mongodb.config` usted debería indicar \n"
+"`dbpath=c:\\mongodb\\data\\`. Podría entonces lanzar `mongod` en una línea de \n"
+"comandos con `c:\\mongodb\\bin\\mongod --config c:\\mongodb\\bin\\mongodb.config`."
 
 #. type: Plain text
 #: en/mongodb.markdown:64
@@ -334,6 +354,10 @@ msgid ""
 "verbose. MacOSX and Linux users can follow almost identical directions. The "
 "only thing you should have to change are the paths."
 msgstr ""
+"Siéntase libre de añadir el directorio `bin` a la variable `PATH` de su sistema \n"
+"operativo para hacer todo esto más sencillo. Los usuarios de MacOSX y Linux \n"
+"pueden seguir instrucciones casi idénticas. Lo único que tendría que cambiar \n"
+"son las rutas."
 
 #. type: Plain text
 #: en/mongodb.markdown:66
@@ -341,6 +365,9 @@ msgid ""
 "Hopefully you now have MonogDB up and running. If you get an error, read the "
 "output carefully - the server is quite good at explaining what's wrong."
 msgstr ""
+"Lo más probable es que ahora ya tenga MongoDB corriendo. Si recibe un error, \n"
+"lea la salida con detenimiento - el servidor es bastante bueno explicando lo \n"
+"que está errado."
 
 #. type: Plain text
 #: en/mongodb.markdown:68
@@ -349,6 +376,9 @@ msgid ""
 "your running server. Try entering `db.version()` to make sure everything's "
 "working as it should. Hopefully you'll see the version number you installed."
 msgstr ""
+"Ahora puede ejecutar `mongo` (sin la *d*), que conectará un shell al servidor \n"
+"que está ejecutando. Intente introduciendo `db.version()` para asegurarse de \n"
+"que todo está funcionando como debería. Verá el número de version del servidor instalado."
 
 #. type: Plain text
 #: en/mongodb.markdown:71
